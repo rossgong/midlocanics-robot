@@ -17,6 +17,17 @@ public class Controller extends Joystick {
     private boolean[] currButtons;
     private boolean[] lastButtons;
     
+    /**
+     * Creates a controller on the given port and with a certain number of 
+     * buttons.
+     * 
+     * @param port The port which this controller is connected. Make sure to
+     *              check this when trying to debug that you are using the right
+     *              port.
+     * @param numButtons The number of buttons on the controller. If too little
+     *                      the <code> update </code> method will not work with
+     *                      all the buttons.
+     */    
     public Controller (int port, int numButtons) {
         super(port);
         

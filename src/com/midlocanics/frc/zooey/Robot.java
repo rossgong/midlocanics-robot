@@ -21,7 +21,6 @@ import edu.wpi.first.wpilibj.Gyro;
  */
 public class Robot extends AbstactComponentRobot {
     //Index of each component
-
     private final int DRIVE_TRAIN = 0;
     private final int BALL_COLLECTION = 1;
     private final int SHOOTER = 2;
@@ -37,13 +36,15 @@ public class Robot extends AbstactComponentRobot {
     private final int PRIMARY = 0;
     private final int UTILITY = 1;
     
+    //Boolean for whether autonomous should be intelligent or dead wreckoning.    
     private final boolean DEAD = true;
     
     Compressor comp;
    
     /*
      * If you have any questions with this code, you can try and contact me
-     * at rjgongaw@ncsu.edu or ross.gong@gmail.com. Preferably the former.
+     * at rjgongaw@ncsu.edu or ross.gong@gmail.com. Will respond faster and 
+     * would prefer the former.
      * -Ross Gongaware
      */
     public void robotInit() {
